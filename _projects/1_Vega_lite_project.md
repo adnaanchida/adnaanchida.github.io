@@ -37,7 +37,7 @@ Colormaps:The default color has been chosen for bar plot 1 and the opacity has b
 Transformations: 
 Removed the null values from dataset.
 
-Overlap with Homework #8: 
+Overlap with Homework #7: 
 The idea and the code has been taken from Homework 8 (https://starboard.gg/nb/nb0jfeJ). It did not have any interactivity before, but we have introduced it in this.
 
 PLOT 2:
@@ -54,7 +54,7 @@ The color for bar chart has been chosen to be red the opacity has been set to 0.
 Transformations: 
 Removed the null values from dataset.
 
-Overlap with Homework #8: 
+Overlap with Homework #7: 
 The idea and the code has been taken from Homework 8 (https://starboard.gg/nb/nb0jfeJ). It did not have any interactivity before, but we have introduced it in this.
 
 
