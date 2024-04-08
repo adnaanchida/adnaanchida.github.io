@@ -7,11 +7,11 @@
 ### Site Settings ###
 title               : Data Visualization, IS445
 description         : >-
-                     Final Project part 3.1 done by Akshant, Smit and Samruddhi. Work has been done using Python, Vega-Lite and Altair
+                     Homework 8 done by Adnaan Chida. Work has been done using Python, Vega-Lite and Altair
                       
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
 #                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
-repository          : akshant10              # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+repository          : adnaanchida              # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
 
@@ -35,13 +35,13 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : Akshant Churi, Smit Malik, Samruddhi Choudhari
+  name              : Adnaan Chida
   image             : https://www.atmiprecast.com/sites/default/files/styles/hero_slide/public/2020-04/UIUC.jpg?h=10d202d3&itok=Cx7NLeA5
 #  behance           : your_username
 # dribbble          : your_username
- # email             : achuri2@illinois.edu, smmalik5@illinois.edu, sac8@illinois.edu
+ # email             : achid3@illinois.edu
 #  facebook          : your_username
- # github            : achuri2, smmalik98, sam2796 # JPN
+ # github            : adnaanchida # JPN
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
