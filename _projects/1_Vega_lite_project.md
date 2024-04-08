@@ -14,7 +14,7 @@ custom_js:
 ### Link to Python file: 
 
 <div class="right">
-{% include elements/button.html link="https://github.com/achuri2/achuri2.github.io/blob/43b8e2792e0c749f185fc34589000000950fab31/Churi_Akshant-Malik_Smit-Choudhari_Samruddhi-assignment10.ipynb" text="Python Jupyter Notebook" %}
+{% include elements/button.html link="https://github.com/adnaanchida/adnaanchida.github.io/blob/fa0fd2b1c932b877a45ac7d0afe857e710ca7675/homework8.ipynb" text="Python Jupyter Notebook" %}
 </div>
 
 
@@ -37,8 +37,8 @@ Colormaps:The default color has been chosen for bar plot 1 and the opacity has b
 Transformations: 
 Removed the null values from dataset.
 
-Overlap with Homework #9: 
-The idea and the code has been taken from Assignment 9 (https://starboard.gg/nb/noPXJg6). It did not have any interactivity before, but we have introduced it in this.
+Overlap with Homework #8: 
+The idea and the code has been taken from Homework 8 (https://starboard.gg/nb/nb0jfeJ). It did not have any interactivity before, but we have introduced it in this.
 
 PLOT 2:
 The plot 2 shows the median square footage of different buildings acquired by the agencies which have different Building Status. When the building status is 'In progress' the median square footage is the highest. 
@@ -54,8 +54,8 @@ The color for bar chart has been chosen to be red the opacity has been set to 0.
 Transformations: 
 Removed the null values from dataset.
 
-Overlap with Homework #9: 
-The idea and the code has been taken from Assignment 9 (https://starboard.gg/nb/noPXJg6). It did not have any interactivity before, but we have introduced it in this.
+Overlap with Homework #8: 
+The idea and the code has been taken from Homework 8 (https://starboard.gg/nb/nb0jfeJ). It did not have any interactivity before, but we have introduced it in this.
 
 
 INTERACTIVITY:
@@ -67,6 +67,6 @@ To make it more interesting we have made these plots interlinked to each other. 
 ### Link to Data
 
 <div class="right">
-{% include elements/button.html link="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv" text="link to data" %}
+{% include elements/button.html link="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/building_inventory.csv" text="link to data" %}
 </div>
 
