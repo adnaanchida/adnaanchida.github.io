@@ -7,4 +7,4 @@ weight: 3
 
 # **Team**
 
-Assignment done by Akshant, Smit and Samruddhi
+Assignment done by Adnaan Chida
