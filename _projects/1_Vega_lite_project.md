@@ -1,7 +1,7 @@
 ---
-name: Homework 10, Visualization 
+name: Homework 8, Visualization (Jekyll)
 image: https://icons.veryicon.com/png/o/business/chart-icon/visualization-icon-07-07.png
-description: This includes the 2 charts 
+description: This includes the 2 charts and the Write-Up
 custom_js:
   - vega.min
   - vega-lite.min
