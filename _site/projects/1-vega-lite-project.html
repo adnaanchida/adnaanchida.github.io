@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Homework 10, Visualization">
+  <meta property="og:description" content="This includes the 2 charts">
+  <meta property="og:image" content="https://icons.veryicon.com/png/o/business/chart-icon/visualization-icon-07-07.png">
+
+  <title>Homework 10, Visualization</title>
+  <meta name="description" content="This includes the 2 charts">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/cv/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/cv/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/cv/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/cv/"><h5><b>Data Visualization, IS445</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/cv/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/cv/about/">Team</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="homework-10-data-viz">Homework 10, Data Viz</h1>
+<h3 id="link-to-python-file">Link to Python file:</h3>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/achuri2/achuri2.github.io/blob/43b8e2792e0c749f185fc34589000000950fab31/Churi_Akshant-Malik_Smit-Choudhari_Samruddhi-assignment10.ipynb">
+  Python Jupyter Notebook
+</a>
+</div>
+
+<h2 id="drag-and-select-bars-on-1st-plot-to-interact-with-2nd-plot">Drag and Select Bars on 1st Plot to Interact With 2nd Plot</h2>
+
+<p>This visualization has 2 plots which are interconnected to each other.</p>
+
+<p>PLOT 1:</p>
+
+<p>Description:
+The first plot shows the average of total floors with respect to the buildings acquired by different Agencies. Plot 1 shows the average Square footage of buildings acquired by the Agencies using bar plots. The density of these floors are calculated by aggregating the total floors for each agency with respect to the building they have acquired over the years and these are shown using a color theme. It can be observed that the Department of Revenue has highest average total floors but still the median square footage is not the highest.</p>
+
+<p>DESIGN CHOICES</p>
+
+<p>Encodings: 
+It is very important to have proper encoding for these plots. The encoding types used in PLOT 1 are Position Channel(x,y) and mark property channel(color). The x value is {“field”:’Agency Name’, “type”:”ordinal”} and y value is {“field”:’Total Floors’, “type”:”quantitative”, “aggregate”:”average”}. The parameters for color are {“field”:’Square Footage’,”type”:”quantitative”, “aggregate”:”average”}.</p>
+
+<p>Colormaps:The default color has been chosen for bar plot 1 and the opacity has been set to 0.9.</p>
+
+<p>Transformations: 
+Removed the null values from dataset.</p>
+
+<p>Overlap with Homework #9: 
+The idea and the code has been taken from Assignment 9 (https://starboard.gg/nb/noPXJg6). It did not have any interactivity before, but we have introduced it in this.</p>
+
+<p>PLOT 2:
+The plot 2 shows the median square footage of different buildings acquired by the agencies which have different Building Status. When the building status is ‘In progress’ the median square footage is the highest.</p>
+
+<p>DESIGN CHOICES</p>
+
+<p>Encodings:
+It is very important to have proper encoding for these plots. The encoding types used in PLOT 1 are Position Channel(x,y) and mark property channel(color). The x value is {“field”:’Bldg Status’, “type”:”ordinal”} and y value is {“field”:’Square Footage’, “type”:”quantitative”, “aggregate”:”median”}.</p>
+
+<p>Colormaps:
+The color for bar chart has been chosen to be red the opacity has been set to 0.6.</p>
+
+<p>Transformations: 
+Removed the null values from dataset.</p>
+
+<p>Overlap with Homework #9: 
+The idea and the code has been taken from Assignment 9 (https://starboard.gg/nb/noPXJg6). It did not have any interactivity before, but we have introduced it in this.</p>
+
+<p>INTERACTIVITY:
+To make it more interesting we have made these plots interlinked to each other. This can be done dragging and selecting the bars of the first plot. Based on the area you have dragged, the median square footages for different buildings (acquired by selected agencies) with different status get updated on the second plot.</p>
+
+<vegachart schema-url="/cv/assets/json/file.json" style="width: 100%"></vegachart>
+<h3 id="link-to-data">Link to Data</h3>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv">
+  link to data
+</a>
+</div>
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Akshant Churi, Smit Malik, Samruddhi Choudhari</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center">
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/cv/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/cv/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/cv/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/cv/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
